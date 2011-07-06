@@ -1,3 +1,5 @@
+using System;
+
 using Wpec.Core;
 
 namespace Wpec.Terminal
@@ -9,8 +11,17 @@ namespace Wpec.Terminal
          string inpath = @"C:\Users\Dave\Desktop\wordpress.input.xml";
          string outpath = @"C:\Users\Dave\Desktop\wordpress.output.xml";
 
-         WordPressExportConverter converter = new WordPressExportConverter();
-         converter.Convert(inpath, outpath);
+         try
+         {
+            WordPressExportConverter converter = new WordPressExportConverter();
+            converter.Convert(inpath, outpath);
+         }
+         catch (Exception exception)
+         {
+            Console.WriteLine("An unexpected error occurred while trying to convert the file {0}.", inpath);
+            Console.WriteLine();
+            Console.WriteLine(exception);
+         }
       }
    }
 }

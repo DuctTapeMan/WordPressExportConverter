@@ -23,7 +23,11 @@
     </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
-    <RecentFiles />
+    <RecentFiles>
+      <File id="FB8B74F1-872C-40A6-8782-C44124F7E28F/f:Program.cs" caret="20" fromTop="2" />
+      <File id="5798C356-4544-4D8A-8389-41FEBF664207/f:ImgTagProcessor.cs" caret="2430" fromTop="71" />
+      <File id="5798C356-4544-4D8A-8389-41FEBF664207/f:WordPressExportConverter.cs" caret="2024" fromTop="61" />
+    </RecentFiles>
     <RecentEdits />
   </RecentFiles>
   <NAntValidationSettings>
