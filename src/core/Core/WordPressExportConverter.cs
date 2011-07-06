@@ -9,6 +9,12 @@ namespace Wpec.Core
    {
       public void Convert(string inpath, string outpath)
       {
+         if (String.IsNullOrEmpty(inpath))
+            throw new ArgumentNullException("inpath");
+         
+         if (String.IsNullOrEmpty(outpath))
+            throw new ArgumentNullException("outpath");
+
          XmlDocument doc = new XmlDocument();
          doc.Load(inpath);
 
@@ -25,9 +31,6 @@ namespace Wpec.Core
          }
 
          doc.Save(outpath);
-
-         Console.WriteLine("Done");
-         Console.ReadLine();
       }
 
       private static Regex findImgTag = new Regex("<img", RegexOptions.Compiled | RegexOptions.IgnoreCase);
@@ -40,22 +43,22 @@ namespace Wpec.Core
          while (true)
          {
             Match startImg = findImgTag.Match(blogPost, pos);
+            
             if (!startImg.Success)
             {
                output.Append(blogPost.Substring(pos));
                break;
             }
-            else
-            {
-               output.Append(blogPost.Substring(pos, startImg.Index - pos));
-               Match endImg = findEndImg.Match(blogPost, startImg.Index);
-               pos = endImg.Index + endImg.Length;
-               string imgTag = blogPost.Substring(startImg.Index, pos - startImg.Index);
 
-               ImgTagProcessor p = new ImgTagProcessor(imgTag);
-               output.Append(p.Process());
-            }
+            output.Append(blogPost.Substring(pos, startImg.Index - pos));
+            Match endImg = findEndImg.Match(blogPost, startImg.Index);
+            pos = endImg.Index + endImg.Length;
+            string imgTag = blogPost.Substring(startImg.Index, pos - startImg.Index);
+
+            ImgTagProcessor p = new ImgTagProcessor(imgTag);
+            output.Append(p.Process());
          }
+
          return output.ToString();
       }
    }

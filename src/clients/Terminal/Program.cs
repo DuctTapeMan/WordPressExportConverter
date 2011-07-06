@@ -15,6 +15,7 @@ namespace Wpec.Terminal
          {
             WordPressExportConverter converter = new WordPressExportConverter();
             converter.Convert(inpath, outpath);
+            Console.WriteLine("Done");
          }
          catch (Exception exception)
          {
@@ -22,6 +23,11 @@ namespace Wpec.Terminal
             Console.WriteLine();
             Console.WriteLine(exception);
          }
+
+         Console.WriteLine();
+         Console.WriteLine();
+         Console.WriteLine("Press any key to exit.");
+         Console.ReadKey();
       }
    }
 }
