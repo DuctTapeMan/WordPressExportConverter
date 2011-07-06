@@ -3,7 +3,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml;
 
-namespace WordPressExportConverter
+namespace Wpec.Core
 {
    public class WordPressExportConverter
    {

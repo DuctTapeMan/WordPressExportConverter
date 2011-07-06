@@ -1,0 +1,40 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="args" priority="1" />
+      <Item value="null" priority="0" />
+      <Item value="Length" priority="0" />
+      <Item value="WordPressExportConverter`0" priority="0" />
+      <Item value="new" priority="0" />
+      <Item value="WordPressExportConverter" priority="0" />
+      <Item value="converter" priority="0" />
+      <Item value="inpath" priority="0" />
+      <Item value="outpath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WordPressExportConverter.WordPressExportConverter">
+      <Item value="Convert`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles />
+    <RecentEdits />
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

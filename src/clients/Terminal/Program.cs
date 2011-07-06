@@ -1,4 +1,6 @@
-namespace WordPressExportConverter
+using Wpec.Core;
+
+namespace Wpec.Terminal
 {
    internal static class Program
    {
