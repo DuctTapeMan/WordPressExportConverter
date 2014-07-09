@@ -1,0 +1,44 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="args" priority="1" />
+      <Item value="null" priority="0" />
+      <Item value="Length" priority="0" />
+      <Item value="WordPressExportConverter`0" priority="0" />
+      <Item value="new" priority="0" />
+      <Item value="WordPressExportConverter" priority="0" />
+      <Item value="converter" priority="0" />
+      <Item value="inpath" priority="0" />
+      <Item value="outpath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WordPressExportConverter.WordPressExportConverter">
+      <Item value="Convert`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="FB8B74F1-872C-40A6-8782-C44124F7E28F/f:Program.cs" caret="20" fromTop="2" />
+      <File id="5798C356-4544-4D8A-8389-41FEBF664207/f:ImgTagProcessor.cs" caret="2430" fromTop="71" />
+      <File id="5798C356-4544-4D8A-8389-41FEBF664207/f:WordPressExportConverter.cs" caret="2024" fromTop="61" />
+    </RecentFiles>
+    <RecentEdits />
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>
